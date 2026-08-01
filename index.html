@@ -67,7 +67,7 @@
   <header class="app">
     <h1>نبرة — MicOne</h1>
     <p>سياسة الخصوصية · Privacy Policy</p>
-    <p class="updated">آخر تحديث: 1 أغسطس 2026 · Last updated: August 1, 2026</p>
+    <p class="updated">آخر تحديث: 2 أغسطس 2026 · Last updated: August 2, 2026</p>
   </header>
 
   <!-- ==================== العربية ==================== -->
@@ -83,7 +83,9 @@
       <ul>
         <li><strong>التسجيلات الصوتية:</strong> تُحفظ محلياً على جهازك. عند طلبك تحويل التسجيل إلى نص، يُرسَل الملف الصوتي بشكل آمن إلى مزوّد خدمة التفريغ الصوتي للمعالجة فقط.</li>
         <li><strong>النصوص المفرَّغة:</strong> عند طلبك تلخيص النص، يُرسَل النص إلى مزوّد نموذج الذكاء الاصطناعي لإنشاء الملخص.</li>
-        <li><strong>معلومات الشراء:</strong> تتم عمليات الاشتراك والدفع بالكامل عبر متجر App Store من Apple. لا نستقبل ولا نخزّن أي بيانات بطاقة دفع؛ نستقبل فقط حالة الاشتراك (فعّال/غير فعّال).</li>
+        <li><strong>معلومات الشراء:</strong> تتم جميع عمليات الشراء عبر متجر App Store من Apple — الاشتراكات وباقات الدقائق (مشتريات استهلاكية لا تنتهي صلاحيتها). لا نستقبل ولا نخزّن أي بيانات بطاقة دفع؛ نستقبل حالة الاشتراك، ونقرأ سجل معاملات الشراء من Apple لاستعادة أرصدة الدقائق المشتراة (مثلاً بعد إعادة تثبيت التطبيق).</li>
+        <li><strong>المفردات المخصصة:</strong> إذا أضفت كلمات أو أسماء مخصصة لتحسين دقة التفريغ، تُرسَل هذه المفردات مع طلب التفريغ إلى وسيطنا الخادمي وإلى مزوّد التفريغ الصوتي للمعالجة فقط.</li>
+        <li><strong>معرّف الجهاز التقني:</strong> يُرسَل معرّف الجهاز الخاص بالمورّد (identifierForVendor) مع طلبات المعالجة لمنع إساءة الاستخدام وإدارة حدود الاستخدام؛ لا يُربط بأي هوية شخصية.</li>
         <li><strong>مراسلات الدعم:</strong> إذا تواصلت معنا عبر البريد الإلكتروني، نحتفظ ببريدك ومحتوى الرسالة للرد على طلبك.</li>
         <li><strong>معرّف تقني مجهول وعدّادات الاستخدام:</strong> يستخدم التطبيق Firebase (من Google) لإنشاء معرّف عشوائي مجهول (UID) لكل تثبيت — ليس حساباً ولا يُربط بأي هوية — ولتخزين عدّادات تقنية (الدقائق المستخدمة، حالة الاشتراك، عدد الملخصات) لإدارة الحدود المجانية والاشتراك.</li>
         <li><strong>سجلات تشغيل تقنية:</strong> عند حدوث خطأ (مثل فشل التفريغ)، قد تُرسل بيانات تقنية محدودة (نوع الخطأ وجزء من المعرّف المجهول) إلى قناة Slack الخاصة بنا للمتابعة التشغيلية.</li>
@@ -98,7 +100,7 @@
       <ul>
         <li><strong>Anthropic (Claude API):</strong> لتلخيص النصوص (المزوّد الأساسي).</li>
         <li><strong>OpenAI:</strong> لتلخيص النصوص (مزوّد احتياطي) و/أو التفريغ الصوتي.</li>
-        <li><strong>مزوّدو التفريغ الصوتي السحابي</strong> (مثل Deepgram أو Google Cloud): لتحويل الصوت إلى نص.</li>
+        <li><strong>Deepgram:</strong> المزوّد الأساسي للتفريغ الصوتي، بما في ذلك فصل المتحدثين وتسميتهم في النص (diarization).</li>
         <li><strong>Google Firebase:</strong> لإدارة المعرّف التقني المجهول وتخزين عدّادات الاستخدام التقنية.</li>
         <li><strong>Slack:</strong> لسجلات التشغيل التقنية عند الأخطاء فقط.</li>
         <li><strong>Apple:</strong> لمعالجة المدفوعات والاشتراكات عبر StoreKit.</li>
@@ -108,7 +110,7 @@
       <h3>5. مدة الاحتفاظ بالبيانات</h3>
       <ul>
         <li>تبقى التسجيلات والنصوص على جهازك حتى تحذفها أنت؛ حذف التطبيق يحذف بياناته من الجهاز.</li>
-        <li>لا نحتفظ بنسخ من تسجيلاتك على خوادمنا بعد اكتمال المعالجة.</li>
+        <li>عند طلب التفريغ، يُرفع التسجيل مؤقتاً إلى تخزين سحابي آمن لإتمام المعالجة، ويُحذف من خوادمنا فور اكتمال التفريغ تلقائياً؛ لا نحتفظ بأي نسخة بعد ذلك.</li>
         <li>مراسلات الدعم تُحفظ لمدة لا تتجاوز 12 شهراً.</li>
       </ul>
 
@@ -156,7 +158,9 @@
       <ul>
         <li><strong>Audio recordings:</strong> Stored locally on your device. When you request a transcription, the audio file is sent securely to a speech-to-text provider for processing only.</li>
         <li><strong>Transcripts:</strong> When you request a summary, the transcript text is sent to an AI model provider to generate the summary.</li>
-        <li><strong>Purchase information:</strong> Subscriptions and payments are handled entirely by Apple's App Store. We never receive or store payment card details; we only receive subscription status (active/inactive).</li>
+        <li><strong>Purchase information:</strong> All purchases are handled entirely by Apple's App Store — subscriptions and minute packs (consumables that never expire). We never receive or store payment card details; we receive subscription status, and we read your Apple purchase transaction history to restore purchased minute-credit balances (e.g., after reinstalling the app).</li>
+        <li><strong>Custom vocabulary:</strong> If you add custom words or names to improve transcription accuracy, those terms are sent with the transcription request to our server relay and to the speech-to-text provider for processing only.</li>
+        <li><strong>Technical device identifier:</strong> The vendor device identifier (identifierForVendor) is sent with processing requests for abuse prevention and usage-limit management; it is never linked to any personal identity.</li>
         <li><strong>Support correspondence:</strong> If you email us, we keep your email address and message content to respond to your request.</li>
         <li><strong>Anonymous technical ID and usage counters:</strong> The app uses Firebase (by Google) to create a random, anonymous ID (UID) per install — not an account, never linked to any identity — and to store technical counters (minutes used, subscription status, summary counts) for managing trial and subscription limits.</li>
         <li><strong>Technical operations logs:</strong> When an error occurs (e.g., a transcription failure), limited technical data (error type and a fragment of the anonymous ID) may be sent to our private Slack channel for operational monitoring.</li>
@@ -171,7 +175,7 @@
       <ul>
         <li><strong>Anthropic (Claude API):</strong> text summarization (primary provider).</li>
         <li><strong>OpenAI:</strong> text summarization (fallback provider) and/or speech-to-text.</li>
-        <li><strong>Cloud speech-to-text providers</strong> (such as Deepgram or Google Cloud): audio transcription.</li>
+        <li><strong>Deepgram:</strong> primary speech-to-text provider, including speaker separation and labeling in the transcript (diarization).</li>
         <li><strong>Google Firebase:</strong> anonymous technical ID management and technical usage-counter storage.</li>
         <li><strong>Slack:</strong> technical operations logs on errors only.</li>
         <li><strong>Apple:</strong> payment and subscription processing via StoreKit.</li>
@@ -181,7 +185,7 @@
       <h3>5. Data Retention</h3>
       <ul>
         <li>Recordings and transcripts remain on your device until you delete them; deleting the app removes its data from the device.</li>
-        <li>We do not retain copies of your recordings on our servers after processing completes.</li>
+        <li>When you request transcription, the recording is temporarily uploaded to secure cloud storage for processing and is automatically deleted from our servers as soon as transcription completes; we retain no copy afterwards.</li>
         <li>Support correspondence is kept for no longer than 12 months.</li>
       </ul>
 
