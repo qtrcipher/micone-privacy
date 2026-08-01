@@ -67,7 +67,7 @@
   <header class="app">
     <h1>نبرة — MicOne</h1>
     <p>سياسة الخصوصية · Privacy Policy</p>
-    <p class="updated">آخر تحديث: 30 يوليو 2026 · Last updated: July 30, 2026</p>
+    <p class="updated">آخر تحديث: 1 أغسطس 2026 · Last updated: August 1, 2026</p>
   </header>
 
   <!-- ==================== العربية ==================== -->
@@ -85,6 +85,8 @@
         <li><strong>النصوص المفرَّغة:</strong> عند طلبك تلخيص النص، يُرسَل النص إلى مزوّد نموذج الذكاء الاصطناعي لإنشاء الملخص.</li>
         <li><strong>معلومات الشراء:</strong> تتم عمليات الاشتراك والدفع بالكامل عبر متجر App Store من Apple. لا نستقبل ولا نخزّن أي بيانات بطاقة دفع؛ نستقبل فقط حالة الاشتراك (فعّال/غير فعّال).</li>
         <li><strong>مراسلات الدعم:</strong> إذا تواصلت معنا عبر البريد الإلكتروني، نحتفظ ببريدك ومحتوى الرسالة للرد على طلبك.</li>
+        <li><strong>معرّف تقني مجهول وعدّادات الاستخدام:</strong> يستخدم التطبيق Firebase (من Google) لإنشاء معرّف عشوائي مجهول (UID) لكل تثبيت — ليس حساباً ولا يُربط بأي هوية — ولتخزين عدّادات تقنية (الدقائق المستخدمة، حالة الاشتراك، عدد الملخصات) لإدارة الحدود المجانية والاشتراك.</li>
+        <li><strong>سجلات تشغيل تقنية:</strong> عند حدوث خطأ (مثل فشل التفريغ)، قد تُرسل بيانات تقنية محدودة (نوع الخطأ وجزء من المعرّف المجهول) إلى قناة Slack الخاصة بنا للمتابعة التشغيلية.</li>
       </ul>
       <p>لا نجمع أي بيانات تحليلية، ولا نستخدم أدوات تتبّع إعلاني، ولا ننشئ حسابات مستخدمين، ولا نربط تسجيلاتك بأي هوية شخصية.</p>
 
@@ -97,6 +99,8 @@
         <li><strong>Anthropic (Claude API):</strong> لتلخيص النصوص (المزوّد الأساسي).</li>
         <li><strong>OpenAI:</strong> لتلخيص النصوص (مزوّد احتياطي) و/أو التفريغ الصوتي.</li>
         <li><strong>مزوّدو التفريغ الصوتي السحابي</strong> (مثل Deepgram أو Google Cloud): لتحويل الصوت إلى نص.</li>
+        <li><strong>Google Firebase:</strong> لإدارة المعرّف التقني المجهول وتخزين عدّادات الاستخدام التقنية.</li>
+        <li><strong>Slack:</strong> لسجلات التشغيل التقنية عند الأخطاء فقط.</li>
         <li><strong>Apple:</strong> لمعالجة المدفوعات والاشتراكات عبر StoreKit.</li>
       </ul>
       <p>تُرسَل البيانات إلى هذه الجهات عبر اتصالات مشفّرة، وتخضع معالجتها لسياسات الخصوصية الخاصة بها. لا نبيع بياناتك لأي طرف ثالث، ولا نشاركها لأغراض إعلانية.</p>
@@ -154,6 +158,8 @@
         <li><strong>Transcripts:</strong> When you request a summary, the transcript text is sent to an AI model provider to generate the summary.</li>
         <li><strong>Purchase information:</strong> Subscriptions and payments are handled entirely by Apple's App Store. We never receive or store payment card details; we only receive subscription status (active/inactive).</li>
         <li><strong>Support correspondence:</strong> If you email us, we keep your email address and message content to respond to your request.</li>
+        <li><strong>Anonymous technical ID and usage counters:</strong> The app uses Firebase (by Google) to create a random, anonymous ID (UID) per install — not an account, never linked to any identity — and to store technical counters (minutes used, subscription status, summary counts) for managing trial and subscription limits.</li>
+        <li><strong>Technical operations logs:</strong> When an error occurs (e.g., a transcription failure), limited technical data (error type and a fragment of the anonymous ID) may be sent to our private Slack channel for operational monitoring.</li>
       </ul>
       <p>We do not collect analytics, we do not use advertising trackers, we do not create user accounts, and we do not link your recordings to any personal identity.</p>
 
@@ -166,6 +172,8 @@
         <li><strong>Anthropic (Claude API):</strong> text summarization (primary provider).</li>
         <li><strong>OpenAI:</strong> text summarization (fallback provider) and/or speech-to-text.</li>
         <li><strong>Cloud speech-to-text providers</strong> (such as Deepgram or Google Cloud): audio transcription.</li>
+        <li><strong>Google Firebase:</strong> anonymous technical ID management and technical usage-counter storage.</li>
+        <li><strong>Slack:</strong> technical operations logs on errors only.</li>
         <li><strong>Apple:</strong> payment and subscription processing via StoreKit.</li>
       </ul>
       <p>Data is sent to these parties over encrypted connections and their handling of it is governed by their own privacy policies. We never sell your data or share it for advertising purposes.</p>
