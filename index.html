@@ -67,7 +67,7 @@
   <header class="app">
     <h1>نبرة — MicOne</h1>
     <p>سياسة الخصوصية · Privacy Policy</p>
-    <p class="updated">آخر تحديث: 2 أغسطس 2026 · Last updated: August 2, 2026</p>
+    <p class="updated">آخر تحديث: 4 أغسطس 2026 · Last updated: August 4, 2026</p>
   </header>
 
   <!-- ==================== العربية ==================== -->
@@ -88,6 +88,7 @@
         <li><strong>معرّف الجهاز التقني:</strong> يُرسَل معرّف الجهاز الخاص بالمورّد (identifierForVendor) مع طلبات المعالجة لمنع إساءة الاستخدام وإدارة حدود الاستخدام؛ لا يُربط بأي هوية شخصية.</li>
         <li><strong>مراسلات الدعم:</strong> إذا تواصلت معنا عبر البريد الإلكتروني، نحتفظ ببريدك ومحتوى الرسالة للرد على طلبك.</li>
         <li><strong>معرّف تقني مجهول وعدّادات الاستخدام:</strong> يستخدم التطبيق Firebase (من Google) لإنشاء معرّف عشوائي مجهول (UID) لكل تثبيت — ليس حساباً ولا يُربط بأي هوية — ولتخزين عدّادات تقنية (الدقائق المستخدمة، حالة الاشتراك، عدد الملخصات) لإدارة الحدود المجانية والاشتراك.</li>
+        <li><strong>سجلات الأعطال وبيانات التشخيص:</strong> يجمع التطبيق سجلات الأعطال وبيانات تشخيصية (طراز الجهاز، إصدار نظام التشغيل، حالة التطبيق عند العطل) لتحسين الاستقرار؛ لا تُربط هذه البيانات بهويتك وتُعالَج عبر Google Firebase Crashlytics.</li>
         <li><strong>سجلات تشغيل تقنية:</strong> عند حدوث خطأ (مثل فشل التفريغ)، قد تُرسل بيانات تقنية محدودة (نوع الخطأ وجزء من المعرّف المجهول) إلى قناة Slack الخاصة بنا للمتابعة التشغيلية.</li>
       </ul>
       <p><strong>حدود الاستخدام:</strong> التجربة المجانية دقيقتان، لمرة واحدة فقط. اشتراك برو يشمل ١٢٠٠ دقيقة تفريغ و١٠٠ ملخص ذكي في الشهر (استخدام عادل، يتجدد شهرياً). باقات الدقائق لا تنتهي صلاحيتها. الأرصدة محدودة بسقف أقصى (١٠٠٠ دقيقة و١٠٠ ملخص كحد أقصى محتفظ به في الوقت نفسه).</p>
@@ -102,7 +103,7 @@
         <li><strong>Anthropic (Claude API):</strong> لتلخيص النصوص (المزوّد الأساسي).</li>
         <li><strong>OpenAI:</strong> لتلخيص النصوص (مزوّد احتياطي) و/أو التفريغ الصوتي.</li>
         <li><strong>Deepgram:</strong> المزوّد الأساسي للتفريغ الصوتي، بما في ذلك فصل المتحدثين وتسميتهم في النص (diarization).</li>
-        <li><strong>Google Firebase:</strong> لإدارة المعرّف التقني المجهول وتخزين عدّادات الاستخدام التقنية.</li>
+        <li><strong>Google Firebase:</strong> لإدارة المعرّف التقني المجهول وتخزين عدّادات الاستخدام التقنية، وللإبلاغ عن الأعطال (Crashlytics).</li>
         <li><strong>Slack:</strong> لسجلات التشغيل التقنية عند الأخطاء فقط.</li>
         <li><strong>Apple:</strong> لمعالجة المدفوعات والاشتراكات عبر StoreKit.</li>
       </ul>
@@ -164,6 +165,7 @@
         <li><strong>Technical device identifier:</strong> The vendor device identifier (identifierForVendor) is sent with processing requests for abuse prevention and usage-limit management; it is never linked to any personal identity.</li>
         <li><strong>Support correspondence:</strong> If you email us, we keep your email address and message content to respond to your request.</li>
         <li><strong>Anonymous technical ID and usage counters:</strong> The app uses Firebase (by Google) to create a random, anonymous ID (UID) per install — not an account, never linked to any identity — and to store technical counters (minutes used, subscription status, summary counts) for managing trial and subscription limits.</li>
+        <li><strong>Crash logs and diagnostics:</strong> The app collects crash logs and diagnostic data (device model, OS version, app state at the time of the crash) to improve stability; this data is not linked to your identity and is processed by Google Firebase Crashlytics.</li>
         <li><strong>Technical operations logs:</strong> When an error occurs (e.g., a transcription failure), limited technical data (error type and a fragment of the anonymous ID) may be sent to our private Slack channel for operational monitoring.</li>
       </ul>
       <p><strong>Usage limits:</strong> The free trial is 2 minutes, one time only. Pro includes 1,200 transcription minutes and 100 AI summaries per month (fair use, resets monthly). Minute packs never expire. Credit balances are capped (a maximum of 1,000 minutes and 100 summaries held at any one time).</p>
@@ -178,7 +180,7 @@
         <li><strong>Anthropic (Claude API):</strong> text summarization (primary provider).</li>
         <li><strong>OpenAI:</strong> text summarization (fallback provider) and/or speech-to-text.</li>
         <li><strong>Deepgram:</strong> primary speech-to-text provider, including speaker separation and labeling in the transcript (diarization).</li>
-        <li><strong>Google Firebase:</strong> anonymous technical ID management and technical usage-counter storage.</li>
+        <li><strong>Google Firebase:</strong> anonymous technical ID management, technical usage-counter storage, and crash reporting (Crashlytics).</li>
         <li><strong>Slack:</strong> technical operations logs on errors only.</li>
         <li><strong>Apple:</strong> payment and subscription processing via StoreKit.</li>
       </ul>
